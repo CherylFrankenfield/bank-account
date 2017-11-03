@@ -21,8 +21,8 @@ $(document).ready(function() {
 
     var account = new Account(newAccount, originalDeposit)
 
-    $("#show-name").append("<li>" + newAccount + "</span></li>");
-    $("#show-balance").append("<li>" + originalDeposit + "</span></li>");
+    $("ul#show-name").append("<li>" + newAccount + "</span></li>");
+    $("ul#show-balance").append("<li>" + originalDeposit + "</span></li>");
 
   });
 });
