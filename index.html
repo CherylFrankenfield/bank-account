@@ -11,7 +11,7 @@
   <body>
     <div class="container">
       <h1>Don't rob my bank</h1>
-      <img src="img/bank.png" alt="cartoon snapshot of Simpsons' Springfield Bank">
+      <!-- <img src="img/bank.png" alt="cartoon snapshot of Simpsons' Springfield Bank"> -->
         <div class="row">
           <div class="col-md-5">
             <div class="card" style="width: 30rem;" id="account-card">
@@ -21,7 +21,7 @@
                   <label for="new-account-name">Full Name:</label>
                   <input id="new-account-name" class="form-control" type="text">
                   <label for="original-deposit">Original Deposit Amount:</label>
-                  <input id="original-deposit" class="form-control" type="text">
+                  <input id="original-deposit" class="form-control" type="number">
                   <button type="submit" id="start" class="btn btn-primary">Get Started</button>
                 </form>
               </div>
@@ -44,13 +44,14 @@
           </div>
 
         </div>
+
         <div class="row">
           <div class="col-md-12">
-            <h3>Current Balance:</h3>
-            <form id="balance-form">
-              <label for="current-balance">Funds that are available:</label>
-              <input id="current-balance" class="form-control" style="width: 30rem;" type="text">
-            </form>
+            <h3>Funds Available:</h3>
+            <ul>
+              <li>Hello, <span id="show-name"></li>
+              <li>Your balance is: <span id="show-balance"></li>
+            </ul>
           </div>
         <div>
 
