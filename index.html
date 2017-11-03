@@ -10,12 +10,48 @@
   </head>
   <body>
     <div class="container">
-      <h1>Bank Transaction</h1>
+      <h1>Don't rob my bank</h1>
         <div class="row">
           <div class="col-md-5">
-
+            <div class="card" style="width: 30rem;" id="account-card">
+              <div class="card-body">
+                <h3 class="card-title">Sign up for an account.</h3>
+                <form id="account-form">
+                  <label for="new-account-name">Full Name:</label>
+                  <input id="new-account-name" class="form-control" type="text">
+                  <label for="original-deposit">Original Deposit Amount:</label>
+                  <input id="original-deposit" class="form-control" type="text">
+                  <button type="submit" id="start" class="btn btn-primary">Get Started</button>
+                </form>
+              </div>
+            </div>
           </div>
+
+          <div class="col-md-5">
+            <div class="card" style="width: 30rem;" id="transaction-card">
+              <div class="card-body">
+                <h3 class="card-title">Withdrawal and Deposit funds here:</h3>
+                <form id="transaction-form">
+                  <label for="withdrawl">Withdrawal Amount:</label>
+                  <input id="withdrawal" class="form-control" type="text">
+                  <label for="deposit">Deposit Amount:</label>
+                  <input id="deposit" class="form-control" type="text">
+                  <button type="submit" id="transact" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Current Balance:</h3>
+            <form id="balance-form">
+              <label for="current-balance">Funds that are available:</label>
+              <input id="current-balance" class="form-control" style="width: 30rem;" type="text">
+            </form>
+          </div>
+        <div>
 
     </div>
   </body>
